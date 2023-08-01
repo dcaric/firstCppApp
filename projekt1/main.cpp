@@ -8,8 +8,9 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int number;
+    printf("bok insert some INT number\n");
+    scanf("%d", &number);
     
     return 0;
 }
