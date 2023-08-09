@@ -6,28 +6,32 @@
 //
 
 #include "Menu.hpp"
+using namespace std;
 
 
-int Menu::showMenu () {
+string Menu::showMenu (list<string> myList) {
     
-    int userselection = 1 ;
+    myList.push_front("EXIT");
+    
     printf ("menu \n");
     printf ("======== \n");
-    printf ("1. GAME: guess number \n");
-    printf ("0. EXIT \n");
-    printf ("======== \n");
-    
-    while (userselection != 0) {
-        scanf ("%d", &userselection);
-        if (userselection == 1) {
-            printf("Guess the number \n");
-        }
-        else if (userselection == 0){
-            printf("You exited the app \n");
-        }
-        else {
-            printf("incorrect number \n");
-        }
+    int i = 0;
+    for (string& worker : myList) {
+        printf("%d. %s \n", i, worker.c_str());
+        i ++;
     }
-    return userselection ;
+
+    printf ("======== \n");
+    int selectedNum;
+    scanf("%d", &selectedNum);
+    
+    int index = 0;
+    list<string>::const_iterator jumper = myList.begin ();
+    while (jumper != myList.end()) {
+        if (index == selectedNum) return *jumper ;
+        jumper ++;
+        index ++;
+    }
+    return "Not found";
 }
+

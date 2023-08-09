@@ -7,13 +7,16 @@
 
 #ifndef Menu_hpp
 #define Menu_hpp
+#include <string>
+#include <list>
 
 #include <stdio.h>
+using namespace std;
 
 class Menu {
     
 public:
-    int showMenu ();
+    string showMenu (list<string>);
     
     
     

@@ -12,7 +12,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     Menu MyMenu;
-    int selectedNum = MyMenu.showMenu ();
-    printf("%d",&selectedNum);
+    string selectedItem = MyMenu.showMenu ({"Guess number", "Calculator"});
+    printf("%s \n", selectedItem.c_str());
     return 0;
 }
