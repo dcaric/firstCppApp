@@ -10,6 +10,8 @@
 		769B406D2A79336500C01E8C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B406C2A79336500C01E8C /* main.cpp */; };
 		769B40752A7AE9EB00C01E8C /* calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40732A7AE9EB00C01E8C /* calculator.cpp */; };
 		769B40782A7D75CA00C01E8C /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40762A7D75CA00C01E8C /* Menu.cpp */; };
+		769B407B2A86BEBD00C01E8C /* GuessNum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40792A86BEBD00C01E8C /* GuessNum.cpp */; };
+		769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B407C2A8BFF0600C01E8C /* Constants.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		769B40742A7AE9EB00C01E8C /* calculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = calculator.hpp; sourceTree = "<group>"; };
 		769B40762A7D75CA00C01E8C /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
 		769B40772A7D75CA00C01E8C /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		769B40792A86BEBD00C01E8C /* GuessNum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuessNum.cpp; sourceTree = "<group>"; };
+		769B407A2A86BEBD00C01E8C /* GuessNum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GuessNum.hpp; sourceTree = "<group>"; };
+		769B407C2A8BFF0600C01E8C /* Constants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
+		769B407D2A8BFF0600C01E8C /* Constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,10 @@
 				769B40772A7D75CA00C01E8C /* Menu.hpp */,
 				769B40732A7AE9EB00C01E8C /* calculator.cpp */,
 				769B40742A7AE9EB00C01E8C /* calculator.hpp */,
+				769B40792A86BEBD00C01E8C /* GuessNum.cpp */,
+				769B407A2A86BEBD00C01E8C /* GuessNum.hpp */,
+				769B407C2A8BFF0600C01E8C /* Constants.cpp */,
+				769B407D2A8BFF0600C01E8C /* Constants.hpp */,
 			);
 			path = projekt1;
 			sourceTree = "<group>";
@@ -129,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769B407B2A86BEBD00C01E8C /* GuessNum.cpp in Sources */,
 				769B40782A7D75CA00C01E8C /* Menu.cpp in Sources */,
+				769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */,
 				769B406D2A79336500C01E8C /* main.cpp in Sources */,
 				769B40752A7AE9EB00C01E8C /* calculator.cpp in Sources */,
 			);
