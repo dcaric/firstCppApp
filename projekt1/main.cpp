@@ -9,12 +9,13 @@
 #include "Menu.hpp"
 #include "GuessNum.hpp"
 #include "Constants.hpp"
+#include "Quiz.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     Menu MyMenu;
-    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::CALCULATOR});
+    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::QUIZ});
     //printf("%s \n", selectedItem.c_str());
     if (selectedItem == Constants::GUESS_NUMBER ) {
         GuessNum guessNum;
@@ -24,6 +25,13 @@ int main(int argc, const char * argv[]) {
         int min, max;
         scanf("%d %d", &min, &max);
         printf("Congratulation you guessed the correct number %d! \n ", guessNum.playersNum(min, max));
+
+    }
+    else if (selectedItem == Constants::QUIZ){
+        Quiz quiz;
+        printf("Choose the correct answer: \n");
+        quiz.questions(quiz.http_get(Constants::QUIZ_URL));
+        
     }
     
     return 0;

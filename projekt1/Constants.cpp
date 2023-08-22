@@ -8,5 +8,6 @@
 #include "Constants.hpp"
 
 const string Constants::GUESS_NUMBER = "Guess number";
-const string Constants::CALCULATOR = "Calculator";
+const string Constants::QUIZ = "Quiz";
+const string Constants::QUIZ_URL = "http://dcapps.net/quiz.json";
 

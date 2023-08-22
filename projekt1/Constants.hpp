@@ -19,7 +19,9 @@ class Constants {
     
 public:
     static const string GUESS_NUMBER;
-    static const string CALCULATOR;
+    static const string QUIZ;
+    static const string QUIZ_URL;
+
 
 };
 #endif /* Constants_hpp */

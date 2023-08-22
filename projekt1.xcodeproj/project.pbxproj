@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		769B406D2A79336500C01E8C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B406C2A79336500C01E8C /* main.cpp */; };
-		769B40752A7AE9EB00C01E8C /* calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40732A7AE9EB00C01E8C /* calculator.cpp */; };
+		769B40752A7AE9EB00C01E8C /* Quiz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40732A7AE9EB00C01E8C /* Quiz.cpp */; };
 		769B40782A7D75CA00C01E8C /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40762A7D75CA00C01E8C /* Menu.cpp */; };
 		769B407B2A86BEBD00C01E8C /* GuessNum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40792A86BEBD00C01E8C /* GuessNum.cpp */; };
 		769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B407C2A8BFF0600C01E8C /* Constants.cpp */; };
+		769B40812A8D59F400C01E8C /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 769B40802A8D59F400C01E8C /* libcurl.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,14 +30,15 @@
 /* Begin PBXFileReference section */
 		769B40692A79336500C01E8C /* projekt1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = projekt1; sourceTree = BUILT_PRODUCTS_DIR; };
 		769B406C2A79336500C01E8C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		769B40732A7AE9EB00C01E8C /* calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = calculator.cpp; sourceTree = "<group>"; };
-		769B40742A7AE9EB00C01E8C /* calculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = calculator.hpp; sourceTree = "<group>"; };
+		769B40732A7AE9EB00C01E8C /* Quiz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Quiz.cpp; sourceTree = "<group>"; };
+		769B40742A7AE9EB00C01E8C /* Quiz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quiz.hpp; sourceTree = "<group>"; };
 		769B40762A7D75CA00C01E8C /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
 		769B40772A7D75CA00C01E8C /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 		769B40792A86BEBD00C01E8C /* GuessNum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuessNum.cpp; sourceTree = "<group>"; };
 		769B407A2A86BEBD00C01E8C /* GuessNum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GuessNum.hpp; sourceTree = "<group>"; };
 		769B407C2A8BFF0600C01E8C /* Constants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
 		769B407D2A8BFF0600C01E8C /* Constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
+		769B40802A8D59F400C01E8C /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = usr/lib/libcurl.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769B40812A8D59F400C01E8C /* libcurl.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +58,7 @@
 			children = (
 				769B406B2A79336500C01E8C /* projekt1 */,
 				769B406A2A79336500C01E8C /* Products */,
+				769B407F2A8D59F400C01E8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,14 +76,22 @@
 				769B406C2A79336500C01E8C /* main.cpp */,
 				769B40762A7D75CA00C01E8C /* Menu.cpp */,
 				769B40772A7D75CA00C01E8C /* Menu.hpp */,
-				769B40732A7AE9EB00C01E8C /* calculator.cpp */,
-				769B40742A7AE9EB00C01E8C /* calculator.hpp */,
+				769B40732A7AE9EB00C01E8C /* Quiz.cpp */,
+				769B40742A7AE9EB00C01E8C /* Quiz.hpp */,
 				769B40792A86BEBD00C01E8C /* GuessNum.cpp */,
 				769B407A2A86BEBD00C01E8C /* GuessNum.hpp */,
 				769B407C2A8BFF0600C01E8C /* Constants.cpp */,
 				769B407D2A8BFF0600C01E8C /* Constants.hpp */,
 			);
 			path = projekt1;
+			sourceTree = "<group>";
+		};
+		769B407F2A8D59F400C01E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769B40802A8D59F400C01E8C /* libcurl.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +155,7 @@
 				769B40782A7D75CA00C01E8C /* Menu.cpp in Sources */,
 				769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */,
 				769B406D2A79336500C01E8C /* main.cpp in Sources */,
-				769B40752A7AE9EB00C01E8C /* calculator.cpp in Sources */,
+				769B40752A7AE9EB00C01E8C /* Quiz.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -252,6 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -262,9 +276,12 @@
 		769B40712A79336500C01E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZFZW3889HK;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -272,9 +289,12 @@
 		769B40722A79336500C01E8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZFZW3889HK;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
