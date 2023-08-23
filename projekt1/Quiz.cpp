@@ -44,6 +44,11 @@ size_t Quiz::WriteCallback(void* contents, size_t size, size_t nmemb, void* user
  @param url which will be fetched
  @return JSON as a string
  */
+
+
+
+
+//httpget prima string koji je zap link (url) di se nalazi ona sva pitanja (file) koja uzima i vraca u obliku velikog stringa
 string Quiz::http_get(const string& url) {
     CURL* curl;
     CURLcode response;
@@ -90,9 +95,15 @@ string Quiz::http_get(const string& url) {
     return questionList;
 }*/
 
+
+//funkcija parse prima string data (u kojem je onaj veliki string s linka) i vraca listu tipa Task (slozeni podatak)
 vector<Task> Quiz::parseQuestions(const string& data) {
-    vector<Task> questionsList;
+    vector<Task> questionsList; //pomocna lista
     
+    
+    /*
+     parsiranje (sjecaknje) na blokove velikog stringa
+     */
     Document myJason;
     myJason.Parse(data.c_str());
     
@@ -111,14 +122,15 @@ vector<Task> Quiz::parseQuestions(const string& data) {
         questionsList.push_back(t);
     }
 
-    return questionsList;
+    return questionsList; //vracamo listu podijeljenu u blokove tipa task
 }
 
 
+//glavna funkija Questions koja igracu prezentira pitanje po pitanje
 void Quiz::questions (const string& data) {
     vector<Task> questions = parseQuestions(data);
     
-    //printf("%s \n", data.c_str());
+    
     for (const auto& examiner : questions){
         printf("%s \n", examiner.question.c_str());
         for (const auto& lines : examiner.options){
@@ -126,13 +138,8 @@ void Quiz::questions (const string& data) {
         }
         char myAns;
         scanf(" %c", &myAns);
-        //cin >>myAns;
-        myAns = toupper(myAns);
+        myAns = toupper(myAns); // nije bitno jel upisen malo il veliko slovo (stavlja uvik u velika slova)
         
-        //printf("sluzbeni [%c] \n", examiner.answer);
-        //printf("moj [%c] \n", myAns);
-        //cout << "moj " << myAns << endl;
-
         if (myAns != examiner.answer){
             printf("Wrong answer. \n");
         }

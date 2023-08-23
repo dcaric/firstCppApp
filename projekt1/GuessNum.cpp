@@ -30,7 +30,7 @@ int GuessNum::randomNum(int min, int max){
 
 int GuessNum::playersNum (int min, int max){
     
-    int rd = randomNum(min, max);
+    int rd = randomNum(min, max); //funk randomnum izabere sluc br izmedu min i max
     int  chosenNum;
     printf("Guess a random number \n");
     scanf("%d", &chosenNum);

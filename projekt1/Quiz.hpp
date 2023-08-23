@@ -47,6 +47,9 @@ using namespace rapidjson;
  "answer": "A"
 } */
 
+
+
+//task je slozeni tip podatka, mora pocet sa struct "ime"
 struct Task{
     string question;
     map<char, string> options;

@@ -13,18 +13,17 @@
 
 using namespace std;
 
+
+//main je posebna funkcija koja nije u klasi i sama za sebe je 
 int main(int argc, const char * argv[]) {
-    Menu MyMenu;
-    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::QUIZ});
-    //printf("%s \n", selectedItem.c_str());
+    Menu MyMenu; //objekt MyMenu od klase menu
+    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::QUIZ}); //pozivanje showmenu priko objekta
     if (selectedItem == Constants::GUESS_NUMBER ) {
         GuessNum guessNum;
-       // GuessNum guessNum = new GuessNum();
-      //insert two number for min and max
         printf("Insert minimum and maximum: \n");
         int min, max;
         scanf("%d %d", &min, &max);
-        printf("Congratulation you guessed the correct number %d! \n ", guessNum.playersNum(min, max));
+        printf("Congratulation you guessed the correct number %d! \n ", guessNum.playersNum(min, max)); //
 
     }
     else if (selectedItem == Constants::QUIZ){
