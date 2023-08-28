@@ -21,7 +21,7 @@ public:
     static const string GUESS_NUMBER;
     static const string QUIZ;
     static const string QUIZ_URL;
-
+    static const string CLASS;
 
 };
 #endif /* Constants_hpp */

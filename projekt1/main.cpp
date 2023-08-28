@@ -10,6 +10,8 @@
 #include "GuessNum.hpp"
 #include "Constants.hpp"
 #include "Quiz.hpp"
+#include "Animal.hpp"
+#include "Cat.hpp"
 
 using namespace std;
 
@@ -17,7 +19,7 @@ using namespace std;
 //main je posebna funkcija koja nije u klasi i sama za sebe je 
 int main(int argc, const char * argv[]) {
     Menu MyMenu; //objekt MyMenu od klase menu
-    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::QUIZ}); //pozivanje showmenu priko objekta
+    string selectedItem = MyMenu.showMenu ({Constants::GUESS_NUMBER,Constants::QUIZ,Constants::CLASS}); //pozivanje showmenu priko objekta
     if (selectedItem == Constants::GUESS_NUMBER ) {
         GuessNum guessNum;
         printf("Insert minimum and maximum: \n");
@@ -32,7 +34,14 @@ int main(int argc, const char * argv[]) {
         quiz.questions(quiz.http_get(Constants::QUIZ_URL));
         
     }
-    
+    else if (selectedItem == Constants::CLASS){
+        //Animal animal;
+        //animal.printTitle();
+        Cat cat;
+        cat.printTitle();
+        
+    }
+
     return 0;
 }
 

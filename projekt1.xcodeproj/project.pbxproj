@@ -13,6 +13,8 @@
 		769B407B2A86BEBD00C01E8C /* GuessNum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40792A86BEBD00C01E8C /* GuessNum.cpp */; };
 		769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B407C2A8BFF0600C01E8C /* Constants.cpp */; };
 		769B40812A8D59F400C01E8C /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 769B40802A8D59F400C01E8C /* libcurl.tbd */; };
+		769B40842A9D0FBF00C01E8C /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40822A9D0FBF00C01E8C /* Animal.cpp */; };
+		769B40872A9D114700C01E8C /* Cat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769B40852A9D114700C01E8C /* Cat.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,10 @@
 		769B407C2A8BFF0600C01E8C /* Constants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
 		769B407D2A8BFF0600C01E8C /* Constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
 		769B40802A8D59F400C01E8C /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = usr/lib/libcurl.tbd; sourceTree = SDKROOT; };
+		769B40822A9D0FBF00C01E8C /* Animal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
+		769B40832A9D0FBF00C01E8C /* Animal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animal.hpp; sourceTree = "<group>"; };
+		769B40852A9D114700C01E8C /* Cat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cat.cpp; sourceTree = "<group>"; };
+		769B40862A9D114700C01E8C /* Cat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cat.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 				769B407A2A86BEBD00C01E8C /* GuessNum.hpp */,
 				769B407C2A8BFF0600C01E8C /* Constants.cpp */,
 				769B407D2A8BFF0600C01E8C /* Constants.hpp */,
+				769B40822A9D0FBF00C01E8C /* Animal.cpp */,
+				769B40832A9D0FBF00C01E8C /* Animal.hpp */,
+				769B40852A9D114700C01E8C /* Cat.cpp */,
+				769B40862A9D114700C01E8C /* Cat.hpp */,
 			);
 			path = projekt1;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 				769B407E2A8BFF0600C01E8C /* Constants.cpp in Sources */,
 				769B406D2A79336500C01E8C /* main.cpp in Sources */,
 				769B40752A7AE9EB00C01E8C /* Quiz.cpp in Sources */,
+				769B40842A9D0FBF00C01E8C /* Animal.cpp in Sources */,
+				769B40872A9D114700C01E8C /* Cat.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
