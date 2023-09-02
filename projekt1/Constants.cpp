@@ -12,4 +12,4 @@
 const string Constants::GUESS_NUMBER = "Guess number";
 const string Constants::QUIZ = "Quiz";
 const string Constants::QUIZ_URL = "http://dcapps.net/quiz.json";
-const string Constants::CLASS = "Class";
+const string Constants::CLASS = "Animals";

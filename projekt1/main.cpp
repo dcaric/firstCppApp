@@ -35,10 +35,13 @@ int main(int argc, const char * argv[]) {
         
     }
     else if (selectedItem == Constants::CLASS){
-        //Animal animal;
-        //animal.printTitle();
-        Cat cat;
-        cat.printTitle();
+        Animal animal ("tonči",45);
+        animal.printTitle();
+        printf("Animal is %d old \n",animal.showAge());
+        //Cat cat;
+        //Cat cat("tonči",67);
+        //cat.printTitle();
+        
         
     }
 

@@ -18,4 +18,12 @@ void Animal::printNumOfLegs(){
     
 }
 
+Animal::Animal (string name, int age) {
+    namePrivate = name;
+    agePrivate = age ;
+    
+}
 
+int Animal::showAge (){
+    return agePrivate;
+}
