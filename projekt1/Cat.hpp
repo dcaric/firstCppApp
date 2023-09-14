@@ -14,11 +14,13 @@ using namespace std;
 
 class Cat : public Animal {
     public:
-    void printTitle();
+    Cat(string, int, bool); // constructor for cat has all from Animal + one more variable bool
+    string isWhiteOrBlack();
+    void printTitle() override; // overriden method printTitle from Animal
 
     
     private:
-    
+    bool whiteOrBlack; // additional variable which Animal doesn't have
     
     
     protected:
