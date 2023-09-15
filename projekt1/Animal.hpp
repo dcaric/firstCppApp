@@ -16,11 +16,10 @@ using namespace std;
 class Animal {
     public:
     void printNumOfLegs();
-    void printTitle();
+    virtual void printTitle(); // virtual means it can be overriden in another class
     int showAge ();
     Animal (string name, int age); //konstruktor ,kreira objekt od ove klase ako nema defoltnog konst
     //Animal ();
-    
     
     private:
     string namePrivate;

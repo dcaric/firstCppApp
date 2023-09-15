@@ -38,11 +38,11 @@ int main(int argc, const char * argv[]) {
         Animal animal ("tonči",45);
         animal.printTitle();
         printf("Animal is %d old \n",animal.showAge());
-        //Cat cat;
-        //Cat cat("tonči",67);
-        //cat.printTitle();
-        
-        
+        printf("\n========= \n");
+        Cat cat("tonči",67, true);
+        cat.printTitle();
+        printf("Cat is %s \n",cat.isWhiteOrBlack().c_str());
+        printf("Cat is %d old \n",cat.showAge());
     }
 
     return 0;

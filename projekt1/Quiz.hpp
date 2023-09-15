@@ -23,6 +23,7 @@
 #include "rapidjson/document.h"
 #include "rapidjson/error/en.h"
 // brew install nlohmann-json
+// brew install rapidjson
 /*
  Choose your target application.
  Go to the Build Settings tab.

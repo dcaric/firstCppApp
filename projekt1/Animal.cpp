@@ -27,3 +27,5 @@ Animal::Animal (string name, int age) {
 int Animal::showAge (){
     return agePrivate;
 }
+
+
